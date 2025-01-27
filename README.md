@@ -1,6 +1,6 @@
-# Bem-vindo ao meu perfil! 💻🚀
+## Bem-vindo ao meu perfil! 💻🚀
 
-<br>
+
 <div style="display: flex; justify-content: center; align-items: center;">
   <img align="center" alt="Joao-MySQL" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
   <img align="center" alt="Joao-Python" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
