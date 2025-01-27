@@ -1,5 +1,4 @@
-# João Vitor Lopes Chaves (vittomlopes) 
----
+
 #### Bem-vindo ao meu perfil! 💻🚀
 
 ---
