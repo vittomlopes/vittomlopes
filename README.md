@@ -4,111 +4,85 @@ Este é um jogo Snake clássico desenvolvido em **C**. O jogador pode escolher e
 
 ---
 
-## 🎰 Funcionalidades
-- Escolha de dificuldade: Fácil, Médio e Difícil, com velocidades ajustadas.
-- Sistema de recordes com o nome do jogador.
-- Movimentação fluida da cobra com detecção de colisões.
-- Objetivo: Comer frutas (`X`) e evitar bater nas paredes ou na própria cobra.
+## 🎰 Tela Inicial e Menu Principal
+O jogo possui uma tela inicial chamativa e um menu principal interativo:
+
+### Tela Inicial:
+- Fundo preto com uma cobra verde desenhada de forma amigável.
+- O título "Snake" em verde.
+- Mensagem "Press Start" para iniciar o jogo.
+- Assinatura do autor: "Snake Game PT BR | João Vitor Lopes Chaves © 2025".
+
+### Menu Principal:
+- O título "SNAKE" em vermelho destacado.
+- Opções do menu:
+  - **Iniciar** (em amarelo): Começa o jogo.
+  - **Recordes**: Exibe os recordes salvos.
+  - **Tutorial**: Explica as regras e controles.
+  - **Sair**: Fecha o jogo.
+
+---
+
+## 🎮 Funcionalidades
+- Vários níveis de dificuldade.
+- Registro de recordes.
+- Controles intuitivos.
+- Interface amigável para terminal.
 
 ---
 
 ## ⚙️ Requisitos
-- **Compilador GCC** ou compatível (Linux, Windows, ou macOS).
-- O código utiliza:
-  - `conio.h`: Para funções como `kbhit()` e `getch()` no Windows.
-  - `unistd.h`: Para `usleep()` em sistemas baseados em Unix (Linux/MacOS).
-- **Terminal** para rodar o jogo.
+- Compilador GCC ou compatível (Linux, Windows ou macOS).
+- Bibliotecas necessárias:
+  - SDL2 → Para gráficos e entrada do usuário.
+  - conio.h → Para kbhit() e getch() (apenas no Windows).
+  - unistd.h → Para usleep() (apenas no Linux/macOS).
+- Terminal para rodar o jogo.
 
 ---
-
 
 ## 🚀 Como Executar
-### Windows:
-1. Instale o compilador GCC (via MinGW, por exemplo).
-ou
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/vittomlopes/snake-game.git
-   cd snake-game
-   
-2. Compile o código:
-   ```bash
-   gcc cobrinha.c -o cobrinha
-   ```
-3. Execute o jogo:
-   ```bash
-   cobrinha.exe
-   ```
 
-### Linux/MacOS:
-1. Certifique-se de que o GCC está instalado:
-   ```bash
-   sudo apt install gcc    # Para Debian/Ubuntu
-   ```
-2. Compile o código:
-   ```bash
-   gcc cobrinha.c -o cobrinha
-   ```
-3. Execute o jogo:
-   ```bash
-   ./cobrinha
-   ```
+### Instalando a SDL2
+
+No Linux (Ubuntu/Debian):
+```sh
+sudo apt update
+sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
+```
+
+No Windows (MinGW):
+1. Baixe os arquivos da SDL2 em: https://github.com/libsdl-org/SDL/releases
+2. Extraia e adicione os arquivos .lib e .dll no seu projeto.
+
+No macOS (Homebrew):
+```sh
+brew install sdl2 sdl2_image sdl2_mixer sdl2_ttf
+```
 
 ---
 
-## 🕹️ Controles e Menus
-- **Menu Principal**:
-  - `1`: Escolher dificuldade e começar o jogo.
-  - `2`: Ver recordes.
-  - `0`: Sair do jogo.
-- **Controles Durante o Jogo**:
-  - `W`: Mover para cima.
-  - `S`: Mover para baixo.
-  - `A`: Mover para a esquerda.
-  - `D`: Mover para a direita.
+## 🎩 Controles e Menus
+
+- **Seta para cima ou W**: Move para cima
+- **Seta para baixo ou S**: Move para baixo
+- **Seta para esquerda ou A**: Move para a esquerda
+- **Seta para direita ou D**: Move para a direita
+- **Tecla Enter**: Seleciona no menu
+- **Tecla Esc**: Sai do jogo
+- **Rolagem do mouse**: Move a lista de recordes
+- **Tecla F12**: Alterna entre modo tela cheia e modo janela
 
 ---
 
-## 🏆 Sistema de Recordes
-- Quando o jogo termina, a pontuação é comparada ao recorde atual.
-- Se a pontuação for maior, o nome do jogador e a pontuação são registrados como novo recorde.
+## 🎉 Créditos
+Desenvolvido por João Vitor Lopes Chaves
 
 ---
 
-## 📁 Estrutura do Código
-### Principais Funções:
-1. `exibirMenuPrincipal()`
-   - Exibe o menu principal com as opções do jogo.
-
-2. `exibirMenuDificuldade(int *dificuldade)`
-   - Permite ao jogador selecionar a dificuldade do jogo.
-
-3. `comecarJogo(int dificuldade)`
-   - Inicializa o jogo, configura a cobra, objetivo e controla a lógica principal.
-
-4. `moverCobra(...)`
-   - Controla a movimentação da cobra e verifica colisões.
-
-5. `gerarObjetivo(...)`
-   - Posiciona aleatoriamente o objetivo (fruta) no tabuleiro.
-
-6. `exibirRecord()`
-   - Mostra o recorde atual.
-
-7. `limparTela()`
-   - Limpa a tela dependendo do sistema operacional.
-
-
-
-## 👥 Equipe
-- **João Vitor Lopes Chaves**
-
-
----
-
-
-## 📝 Licença
-Este projeto é licenciado sob a [Licença MIT](./LICENSE).
+## 🔗 Links
+- [Repositório no GitHub](#) *(Adicionar o link real aqui)*
+- [Documentação Oficial da SDL2](https://github.com/libsdl-org/SDL)
 
 
 
